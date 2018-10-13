@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>SE 3316 - Lab2</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="lab2css.css">
+</head>
+<body>
+    <h1>Fruit Shelf</h1>
+    <ol id=”fruits”></ol>
+    Pick a fruit:
+    <input type="text" id="newfruit">
+
+    <figure>
+        <ul style="list-style-type:none">
+            <li>
+                <div class="content">
+                    <img src="Apples.jpg">
+                    <div class="Text">
+                        <h3><strong>Apples</strong></h3>
+                        <p>Price: $0.99/Apple</p>
+                        <p>Currently In Stock: <input type="text" id="stock1" value="162" readonly="readonly" class="stock"/> </p> 
+                        <p>
+                            Order:
+                            <input type="text" value="1" id="display1" readonly="readonly" class="order"/>
+                            <input type="button" value="+" id="inc" onclick="incNumber(1)" />
+                            <input type="button" value="-" id="dec" onclick="decNumber(1)" />
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <img src="Pears.jpg">
+                    <div class="Text">
+                        <h3><strong>Pears</strong></h3>
+                        <p>Price: $0.99/Pear</p>
+                        <p>Currently In Stock: <input type="text" id="stock2" value="104" readonly="readonly" class="stock" /> </p>
+                        <p>
+                            Order:
+                            <input type="text" value="1" id="display2" readonly="readonly" class="order" />
+                            <input type="button" value="+" id="inc" onclick="incNumber(2)" />
+                            <input type="button" value="-" id="dec" onclick="decNumber(2)" />
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <img src="Oranges.jpg">
+                    <div class="Text">
+                        <h3><strong>Oranges</strong></h3>
+                        <p>Price: $1.99/Orange</p>
+                        <p>Currently In Stock: <input type="text" id="stock" value="61" readonly="readonly" class="stock" /> </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <img src="Nectarines.jpg">
+                    <div class="Text">
+                        <h3><strong>Nectarines</strong></h3>
+                        <p>Price: $0.79/Nectarine</p>
+                        <p>Currently In Stock: <input type="text" id="stock" value="207" readonly="readonly" class="stock" /> </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <img src="Apricots.jpg">
+                    <div class="Text">
+                        <h3><strong>Pears</strong></h3>
+                        <p>Price: $0.59/Apricot</p>
+                        <p>Currently In Stock: <input type="text" id="stock" value="251" readonly="readonly" class="stock" /> </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <img src="Bananas.jpg">
+                    <div class="Text">
+                        <h3><strong>Bananas</strong></h3>
+                        <p>Price: $0.99/Banana</p>
+                        <p>Currently In Stock: <input type="text" id="stock" value="68" readonly="readonly" class="stock" /> </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <img src="Mangoes.jpg">
+                    <div class="Text">
+                        <h3><strong>Mangoes</strong></h3>
+                        <p>Price: $1.99/Mango</p>
+                        <p>Currently In Stock: <input type="text" id="stock" value="78" readonly="readonly" class="stock" /> </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <img src="Strawberries.jpg">
+                    <div class="Text">
+                        <h3><strong>Strawberries</strong></h3>
+                        <p>Price: $0.19/Strawberry</p>
+                        <p>Currently In Stock: <input type="text" id="stock" value="532" readonly="readonly" class="stock" /> </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <img src="Blueberries.jpg">
+                    <div class="Text">
+                        <h3><strong>Blueberries</strong></h3>
+                        <p>Price: $0.03/Blueberry</p>
+                        <p>Currently In Stock: <input type="text" id="stock" value="1076" readonly="readonly" class="stock" /> </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <img src="Raspberries.jpg">
+                    <div class="Text">
+                        <h3><strong>Raspberries</strong></h3>
+                        <p>Price: $0.03/Raspberry</p>
+                        <p>Currently In Stock: <input type="text" id="stock" value="787" readonly="readonly" class="stock" /> </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <img src="Lemons.jpg">
+                    <div class="Text">
+                        <h3><strong>Lemons</strong></h3>
+                        <p>Price: $0.99/Lemon</p>
+                        <p>Currently In Stock: <input type="text" id="stock" value="150" readonly="readonly" class="stock" /> </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </figure>
+    <h1>Shopping Cart:</h1>
+    <ol id=”basket”>
+
+    </ol>
+    <footer>
+        <script type='text/javascript' src='script.js'></script>
+    </footer>
+</body>
+</html>

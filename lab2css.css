@@ -1,0 +1,36 @@
+﻿body {
+}
+
+
+
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+li {
+    margin: 50px 0;
+}
+
+.content {
+    display: flex;
+}
+
+    .content img {
+        margin-right: 10px;
+        display: block;
+    }
+
+    .content h3,
+    .content p {
+        margin: 0;
+    }
+
+.stock{
+    width:50px;
+}
+
+.order {
+    width: 75px;
+}
