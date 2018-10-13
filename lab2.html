@@ -4,6 +4,7 @@
 <head>
     <title>SE 3316 - Lab2</title>
     <meta charset="UTF-8">
+    <script type='text/javascript' src='script.js'></script>
     <link rel="stylesheet" type="text/css" href="lab2css.css">
 </head>
 <body>
@@ -20,13 +21,14 @@
                     <div class="Text">
                         <h3><strong>Apples</strong></h3>
                         <p>Price: $0.99/Apple</p>
-                        <p>Currently In Stock: <input type="text" id="stock1" value="162" readonly="readonly" class="stock"/> </p> 
+                        <p>Currently In Stock: <input type="text" id="stock1" value="162" readonly="readonly" class="stock" /> </p>
                         <p>
                             Order:
-                            <input type="text" value="1" id="display1" readonly="readonly" class="order"/>
+                            <input type="text" value="1" id="display1" class="order" />
                             <input type="button" value="+" id="inc" onclick="incNumber(1)" />
                             <input type="button" value="-" id="dec" onclick="decNumber(1)" />
                         </p>
+                        <input type="button" value="Add to Cart" id="addtocart" onclick="addToCart(1)"  class="addtocart"/>
                     </div>
                 </div>
             </li>
@@ -39,10 +41,11 @@
                         <p>Currently In Stock: <input type="text" id="stock2" value="104" readonly="readonly" class="stock" /> </p>
                         <p>
                             Order:
-                            <input type="text" value="1" id="display2" readonly="readonly" class="order" />
+                            <input type="text" value="1" id="display2" class="order" />
                             <input type="button" value="+" id="inc" onclick="incNumber(2)" />
                             <input type="button" value="-" id="dec" onclick="decNumber(2)" />
                         </p>
+                        <input type="button" value="Add to Cart" id="addtocart" onclick="addToCart(2)" class="addtocart" />
                     </div>
                 </div>
             </li>
@@ -52,7 +55,14 @@
                     <div class="Text">
                         <h3><strong>Oranges</strong></h3>
                         <p>Price: $1.99/Orange</p>
-                        <p>Currently In Stock: <input type="text" id="stock" value="61" readonly="readonly" class="stock" /> </p>
+                        <p>Currently In Stock: <input type="text" id="stock3" value="61" readonly="readonly" class="stock" /> </p>
+                        <p>
+                            Order:
+                            <input type="text" value="1" id="display3" class="order" />
+                            <input type="button" value="+" id="inc" onclick="incNumber(3)" />
+                            <input type="button" value="-" id="dec" onclick="decNumber(3)" />
+                        </p>
+                        <input type="button" value="Add to Cart" id="addtocart" onclick="addToCart(3)" class="addtocart" />
                     </div>
                 </div>
             </li>
@@ -62,7 +72,14 @@
                     <div class="Text">
                         <h3><strong>Nectarines</strong></h3>
                         <p>Price: $0.79/Nectarine</p>
-                        <p>Currently In Stock: <input type="text" id="stock" value="207" readonly="readonly" class="stock" /> </p>
+                        <p>Currently In Stock: <input type="text" id="stock4" value="207" readonly="readonly" class="stock" /> </p>
+                        <p>
+                            Order:
+                            <input type="text" value="1" id="display4" class="order" />
+                            <input type="button" value="+" id="inc" onclick="incNumber(4)" />
+                            <input type="button" value="-" id="dec" onclick="decNumber(4)" />
+                        </p>
+                        <input type="button" value="Add to Cart" id="addtocart" onclick="addToCart(4)" class="addtocart" />
                     </div>
                 </div>
             </li>
@@ -70,9 +87,16 @@
                 <div class="content">
                     <img src="Apricots.jpg">
                     <div class="Text">
-                        <h3><strong>Pears</strong></h3>
+                        <h3><strong>Apricots</strong></h3>
                         <p>Price: $0.59/Apricot</p>
-                        <p>Currently In Stock: <input type="text" id="stock" value="251" readonly="readonly" class="stock" /> </p>
+                        <p>Currently In Stock: <input type="text" id="stock5" value="251" readonly="readonly" class="stock" /> </p>
+                        <p>
+                            Order:
+                            <input type="text" value="1" id="display5" class="order" />
+                            <input type="button" value="+" id="inc" onclick="incNumber(5)" />
+                            <input type="button" value="-" id="dec" onclick="decNumber(5)" />
+                        </p>
+                        <input type="button" value="Add to Cart" id="addtocart" onclick="addToCart(5)" class="addtocart" />
                     </div>
                 </div>
             </li>
@@ -82,7 +106,14 @@
                     <div class="Text">
                         <h3><strong>Bananas</strong></h3>
                         <p>Price: $0.99/Banana</p>
-                        <p>Currently In Stock: <input type="text" id="stock" value="68" readonly="readonly" class="stock" /> </p>
+                        <p>Currently In Stock: <input type="text" id="stock6" value="68" readonly="readonly" class="stock" /> </p>
+                        <p>
+                            Order:
+                            <input type="text" value="1" id="display6" class="order" />
+                            <input type="button" value="+" id="inc" onclick="incNumber(6)" />
+                            <input type="button" value="-" id="dec" onclick="decNumber(6)" />
+                        </p>
+                        <input type="button" value="Add to Cart" id="addtocart" onclick="addToCart(6)" class="addtocart" />
                     </div>
                 </div>
             </li>
@@ -92,7 +123,14 @@
                     <div class="Text">
                         <h3><strong>Mangoes</strong></h3>
                         <p>Price: $1.99/Mango</p>
-                        <p>Currently In Stock: <input type="text" id="stock" value="78" readonly="readonly" class="stock" /> </p>
+                        <p>Currently In Stock: <input type="text" id="stock7" value="78" readonly="readonly" class="stock" /> </p>
+                        <p>
+                            Order:
+                            <input type="text" value="1" id="display7" class="order" />
+                            <input type="button" value="+" id="inc" onclick="incNumber(7)" />
+                            <input type="button" value="-" id="dec" onclick="decNumber(7)" />
+                        </p>
+                        <input type="button" value="Add to Cart" id="addtocart" onclick="addToCart(7)" class="addtocart" />
                     </div>
                 </div>
             </li>
@@ -102,7 +140,14 @@
                     <div class="Text">
                         <h3><strong>Strawberries</strong></h3>
                         <p>Price: $0.19/Strawberry</p>
-                        <p>Currently In Stock: <input type="text" id="stock" value="532" readonly="readonly" class="stock" /> </p>
+                        <p>Currently In Stock: <input type="text" id="stock8" value="532" readonly="readonly" class="stock" /> </p>
+                        <p>
+                            Order:
+                            <input type="text" value="1" id="display8" class="order" />
+                            <input type="button" value="+" id="inc" onclick="incNumber(8)" />
+                            <input type="button" value="-" id="dec" onclick="decNumber(8)" />
+                        </p>
+                        <input type="button" value="Add to Cart" id="addtocart" onclick="addToCart(8)" class="addtocart" />
                     </div>
                 </div>
             </li>
@@ -112,7 +157,14 @@
                     <div class="Text">
                         <h3><strong>Blueberries</strong></h3>
                         <p>Price: $0.03/Blueberry</p>
-                        <p>Currently In Stock: <input type="text" id="stock" value="1076" readonly="readonly" class="stock" /> </p>
+                        <p>Currently In Stock: <input type="text" id="stock9" value="1076" readonly="readonly" class="stock" /> </p>
+                        <p>
+                            Order:
+                            <input type="text" value="1" id="display9" class="order" />
+                            <input type="button" value="+" id="inc" onclick="incNumber(9)" />
+                            <input type="button" value="-" id="dec" onclick="decNumber(9)" />
+                        </p>
+                        <input type="button" value="Add to Cart" id="addtocart" onclick="addToCart(9)" class="addtocart" />
                     </div>
                 </div>
             </li>
@@ -122,7 +174,14 @@
                     <div class="Text">
                         <h3><strong>Raspberries</strong></h3>
                         <p>Price: $0.03/Raspberry</p>
-                        <p>Currently In Stock: <input type="text" id="stock" value="787" readonly="readonly" class="stock" /> </p>
+                        <p>Currently In Stock: <input type="text" id="stock10" value="787" readonly="readonly" class="stock" /> </p>
+                        <p>
+                            Order:
+                            <input type="text" value="1" id="display10" class="order" />
+                            <input type="button" value="+" id="inc" onclick="incNumber(10)" />
+                            <input type="button" value="-" id="dec" onclick="decNumber(10)" />
+                        </p>
+                        <input type="button" value="Add to Cart" id="addtocart" onclick="addToCart(10)" class="addtocart" />
                     </div>
                 </div>
             </li>
@@ -132,7 +191,14 @@
                     <div class="Text">
                         <h3><strong>Lemons</strong></h3>
                         <p>Price: $0.99/Lemon</p>
-                        <p>Currently In Stock: <input type="text" id="stock" value="150" readonly="readonly" class="stock" /> </p>
+                        <p>Currently In Stock: <input type="text" id="stock11" value="150" readonly="readonly" class="stock" /> </p>
+                        <p>
+                            Order:
+                            <input type="text" value="1" id="display11" class="order" />
+                            <input type="button" value="+" id="inc" onclick="incNumber(11)" />
+                            <input type="button" value="-" id="dec" onclick="decNumber(11)" />
+                        </p>
+                        <input type="button" value="Add to Cart" id="addtocart" onclick="addToCart(11)" class="addtocart" />
                     </div>
                 </div>
             </li>
@@ -140,11 +206,16 @@
 
     </figure>
     <h1>Shopping Cart:</h1>
-    <ol id=”basket”>
 
+    <ol id="basket">
+        
     </ol>
-    <footer>
-        <script type='text/javascript' src='script.js'></script>
-    </footer>
+    <p id="totalNoTax"> Total before tax: </p>
+    <p id="totalAfterTax"> Total after tax (13%): </p>
+
+    <div id="container">
+        <input type="button" value="Cancel" id="Cancel" onclick="clearList()" />
+        <input type="button" value="Buy" id="Buy" />
+    </div>
 </body>
 </html>
