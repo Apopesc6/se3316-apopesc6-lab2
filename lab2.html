@@ -9,9 +9,9 @@
 </head>
 <body>
     <h1>Fruit Shelf</h1>
-    <ol id=”fruits”></ol>
-    Pick a fruit:
-    <input type="text" id="newfruit">
+
+    Tax rate (%):
+    <input type="text" id="taxrate" value="13" class="stock" readonly>
 
     <figure>
         <ul style="list-style-type:none">
@@ -215,7 +215,7 @@
 
     <div id="container">
         <input type="button" value="Cancel" id="Cancel" onclick="clearList()" />
-        <input type="button" value="Buy" id="Buy" />
+        <input type="button" value="Buy" id="Buy" onclick="buyItems()"/>
     </div>
 </body>
 </html>
