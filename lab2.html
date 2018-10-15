@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Fruit Shelf</h1>
-
+    <input type="button" value="Log in as Manager" id="login" onclick="login()" />
     Tax rate (%):
     <input type="text" id="taxrate" value="13" class="stock" readonly>
 
@@ -28,7 +28,7 @@
                             <input type="button" value="+" id="inc" onclick="incNumber(1)" />
                             <input type="button" value="-" id="dec" onclick="decNumber(1)" />
                         </p>
-                        <input type="button" value="Add to Cart" id="addtocart" onclick="addToCart(1)"  class="addtocart"/>
+                        <input type="button" value="Add to Cart" id="addtocart" onclick="addToCart(1)" class="addtocart" />
                     </div>
                 </div>
             </li>
@@ -207,15 +207,13 @@
     </figure>
     <h1>Shopping Cart:</h1>
 
-    <ol id="basket">
-        
-    </ol>
+    <ol id="basket"></ol>
     <p id="totalNoTax"> Total before tax: </p>
     <p id="totalAfterTax"> Total after tax (13%): </p>
 
     <div id="container">
         <input type="button" value="Cancel" id="Cancel" onclick="clearList()" />
-        <input type="button" value="Buy" id="Buy" onclick="buyItems()"/>
+        <input type="button" value="Buy" id="Buy" onclick="buyItems()" />
     </div>
 </body>
 </html>
